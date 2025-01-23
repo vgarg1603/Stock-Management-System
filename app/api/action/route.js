@@ -6,7 +6,7 @@ export async function POST(request) {
 
     let { action, productSlug, initialQuantity } = await request.json()
 
-    const uri = "mongodb+srv://mongodb:veugp5s4vtgvQfYu@cluster0.mlejt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+    const uri = "<YOUR_CONNECTION_STRING>";
 
     const client = new MongoClient(uri);
 
