@@ -4,7 +4,7 @@ import { NextResponse } from "next/server"
 export async function GET(request) {
     const query = request.nextUrl.searchParams.get("query")
 
-    const uri = "mongodb+srv://mongodb:veugp5s4vtgvQfYu@cluster0.mlejt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    const uri = "<YOUR_CONNECTION_STRING>"
 
     const client = new MongoClient(uri)
 
